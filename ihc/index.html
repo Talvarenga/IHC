@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Stream</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <link rel="stylesheet" type="text/css" href="ionicons.min.css">
+    <style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+    
+<body>
+    <div class="section-header"> 
+        <div class="row">
+          
+          <a href="index.html">
+          <img src="resources/pngcode.png" alt="stream logo" class="logo">
+            </a>
+             <ul class="main-nav js--main-nav">
+                 <li><a href="jogos.html">Jogos</a></li>
+                 <div class="popup" onclick="myFunction()">
+  
+                 <li><a href="#procurar">Procurar</a></li>
+                 
+                 <li><a href="#login">Entre/Cadastro</a></li>
+                     <span class="popuptext" id="myPopup">Procurar e Login inativos</span>
+                </div>
+             </ul>
+        
+         </div>
+    
+        </div>
+    <div class="section-inicial"> 
+        <h2>A maior plataforma de Streaming voltada para o mundo dos games</h2>
+    </div>
+    <div class="recomendados">
+        <h3>Canais Recomendados:</h3>
+    
+    </div>
+    
+    <div class="lista">
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <a href="cblol.html">
+                    <img src="resources/img1.png" alt="League of Legends" width="5" height="5">
+                    </a>
+                    <h3>Cblol</h3>
+                    <h4>Campeonato de League of Legends</h4>
+                    <div class="city-feature">
+                        50,2 mil espectadores
+                    </div>
+                    <div class="city-feature">
+                        1,3 mi+ favoritos
+                    </div>
+                    <div class="city-feature">
+                        <ul class="classelinks">
+                        <li><a href="categorialol.html">League of Legends</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <a href="nlkripp.html">
+                    <img src="resources/img2.png" alt="Hearthstone">
+                    </a>
+                    <h3>nl_Kripp</h3>
+                    <h4>Jogando Hearthstone</h4>
+                    <div class="city-feature">
+                        5,7 mil espectadores
+                    </div>
+                    <div class="city-feature">
+                        1,4 mi+ favoritos
+                    </div>
+                    <div class="city-feature">
+                        <ul class="classelinks">
+                        <li><a href="categoriahs.html">Hearthstone</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <a href="manalol.html">
+                    <img src="resources/img3.png" alt="Dota">
+                    </a>
+                    <h3>Manalol</h3>
+                    <h4>Joangado Dota com os inscritos</h4>
+                    <div class="city-feature">
+                        
+                        249 espectadores
+                    </div>
+                    <div class="city-feature">
+                        
+                        285,5 mil+ favoritos
+                    </div>
+                    <div class="city-feature">
+                        <ul class="classelinks">
+                        <li><a href="categoriadota.html">Dota</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <a href="victor23.html">
+                    <img src="resources/img4.png" alt="Grand Theft Auto V">
+                    </a>
+                    <h3>Victor23</h3>
+                    <h4>Grand Theft Auto V</h4>
+                    <div class="city-feature">
+                        
+                        32 espectadores
+                    </div>
+                    <div class="city-feature">
+                        
+                        55+ favoritos
+                    </div>
+                    <div class="city-feature">
+                        <ul class="classelinks">
+                        <li><a href="categoriagta.html">Grand Theft Auto V</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+         <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+</body>
+
+
+
+</html>
